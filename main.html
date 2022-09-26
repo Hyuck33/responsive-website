@@ -7,7 +7,7 @@
     <meta name="description" content="ming's reponsive-website"> <!--웹사이트 설명-->
     <meta name="author" content="qwe"> <!--누가 만들었는지-->
     <link rel="icon" href="/imgs/고양.png">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <script src="https://kit.fontawesome.com/6736cfc5f3.js" crossorigin="anonymous"></script>
     <title>Kming</title>
     <script src="/main.js" defer></script>
@@ -21,14 +21,19 @@
         </div>
 
         <ul class="navbar__menu">
-           <li class="navbar__menu__item">Home</li>
-           <li class="navbar__menu__item">About</li>
-           <li class="navbar__menu__item">Skills</li>
-           <li class="navbar__menu__item">My work</li>
-           <li class="navbar__menu__item">Testimonials</li>
-           <li class="navbar__menu__item">Contact</li> 
+           <li class="navbar__menu__item" data-link="#home">Home</li>
+           <li class="navbar__menu__item" data-link="#about">About</li>
+           <li class="navbar__menu__item" data-link="#skills">Skills</li>
+           <li class="navbar__menu__item" data-link="#work">My work</li>
+           <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+           <li class="navbar__menu__item" data-link="#contact">Contact</li> 
         </ul>
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
+    
+
 
     <!-- Home -->
     <section id="home">
@@ -41,7 +46,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>
             Hello, I'm coding while listening to Elly's lecture at dawn. 
@@ -229,56 +234,56 @@
     </div>
 
     <div class="work__projects">
-        <a href=""class="project" target = "blank">
+        <a href=""class="project" target = "blank" data-type="front-end">
             <img src="imgs/projects/project1.png" alt="Youtube" class="project__img">
             <div class="project__discription">
                 <h3>Youtube Site</h3>
                 <span>Clone coding with HTML,CSS</span>
             </div>
         </a>
-        <a href=""class="project" target = "blank">
+        <a href="#"class="project" target = "blank" data-type="front-end">
             <img src="imgs/projects/project2.png" alt="Youtube" class="project__img">
             <div class="project__discription">
                 <h3>Responsive Navber</h3>
                 <span>HTML,CSS with media query</span>
             </div>
         </a>
-        <a href=""class="project" target = "blank">
+        <a href="#"class="project" target = "blank" data-type="front-end">
             <img src="imgs/projects/project3.png" alt="Youtube" class="project__img">
             <div class="project__discription">
                 <h3>Youtube Site</h3>
                 <span>Clone coding with HTML,CSS</span>
             </div>
         </a>
-        <a href=""class="project" target = "blank">
+        <a href="#"class="project" target = "blank" data-type="back-end">
             <img src="imgs/projects/project4.png" alt="" class="project__img">
             <div class="project__discription">
                 <h3>Youtube Site</h3>
                 <span>Explanation</span>
             </div>
         </a>
-        <a href=""class="project" target = "blank">
+        <a href="#"class="project" target = "blank" data-type="back-end">
             <img src="imgs/projects/project5.png" alt="" class="project__img">
             <div class="project__discription">
                 <h3>project</h3>
                 <span>Explanation</span>
             </div>
         </a>
-        <a href=""class="project" target = "blank">
+        <a href="#"class="project" target = "blank" data-type="mobile">
             <img src="imgs/projects/project6.png" alt="" class="project__img">
             <div class="project__discription">
                 <h3>Explanation</h3>
                 <span>Explanation</span>
             </div>
         </a>
-        <a href=""class="project" target = "blank">
+        <a href="#"class="project" target = "blank" data-type="mobile">
             <img src="imgs/projects/project7.png" alt="" class="project__img">
             <div class="project__discription">
                 <h3>project</h3>
                 <span>Explanation</span>
             </div>
         </a>
-        <a href=""class="project" target = "blank">
+        <a href="#"class="project" target = "blank" data-type="mobile">
             <img src="imgs/projects/project8.png" alt="" class="project__img">
             <div class="project__discription">
                 <h3>project</h3>
@@ -287,7 +292,7 @@
         </a>
     </div>
     <!-- Testimonials -->
-    <section id="testimonials"></section>
+    <section id="testimonials" class="section"></section>
     <div class="section__container">
         <h1>Testimonials</h1>
         <h3>See what say about me</h3>
@@ -314,7 +319,7 @@
         <img src="imgs/testimonial/people1.jpg"alt=""class="testimonials">
         </div>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let`s talk</h1>
         <h2 class="contact__email">qwe13421@naver.com</h2>
         <div class="contact__link">
