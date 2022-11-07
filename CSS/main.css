@@ -500,4 +500,8 @@ display: none;
   width: 100%;
   margin: 4px 0;
 }
+.arrow-up.visible{
+  opacity: 1;
+  pointer-events: auto;
+}
 }
